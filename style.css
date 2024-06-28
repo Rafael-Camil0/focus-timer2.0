@@ -1,0 +1,133 @@
+*{
+    margin:0;
+    padding: 0;
+
+    box-sizing: border-box;
+    --moz-osz-font-smoothing:grayscale;
+    --webkit-font-smoothing:antialiased;
+}
+
+.sr-only{
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    overflow: hidden;
+
+    margin:-1px;
+    padding: 0;
+    border: 0;
+    appearance: none;
+}
+:root{
+    --bg-color: #fff;
+    --txt-color:#323238;
+    --bg-card-color:#E1E1E6;
+    --bg-card-color-hover-rain:#02799D;
+    --bg-gradiente-color-hover-fire: linear-gradient(360deg, rgba(36,0,0,1) 0%, rgba(121,58,9,1) 48%, rgba(77,255,0,1) 100%) ;
+    --bg-card-color-hover-tree:#114511ff;
+    --bg-card-color-hover-store:purple;
+    font-family: "Roboto", sans-serif;
+
+    font-size: 62.5%;
+
+}
+.running .ph-play,
+html:not(.running) .ph-pause{
+    display: none;
+}
+body{
+    font-size: 1.2rem;
+    display: grid;
+    place-content: center;
+}
+
+main{
+
+    height: 100vh;
+    display: flex;
+    gap: 192px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+main span{
+    
+
+font-family: 'Roboto';
+font-weight: 500;
+font-size: 12.6rem;
+line-height: 148px;
+
+text-align: center;
+text-transform: uppercase;
+
+color: var(--txt-color);
+
+}
+#timer{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+#controls{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+#controls button{
+width: 40px;
+height: 40px;
+font-size: 2.3rem;
+text-align: center;
+
+background: transparent;
+border-radius: 99rem;
+
+
+
+border: 2px solid var(--txt-color) ;
+
+
+
+}
+#controls button:hover{
+    cursor: pointer;
+}
+#music{
+ max-width: 256px;
+ max-height: 578px;
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+ gap: 20px;
+ flex-wrap: wrap;
+}
+#music button{
+width: 118px;
+height: 132px;
+font-size: 6rem;
+color: var(--txt-color);
+border-radius: 2.4rem;
+background-color: var(--bg-card-color);
+border: none;
+}
+
+#music .fire:hover{
+    color: var(--bg-card-color);
+    background: var(--bg-gradiente-color-hover-fire);
+}
+#music .tree:hover{
+    color: var(--bg-card-color);
+    background: var(--bg-card-color-hover-tree);
+}
+#music .rain:hover{
+    color: var(--bg-card-color);
+    background: var(--bg-card-color-hover-rain);
+}
+#music .store:hover{
+    color: var(--bg-card-color);
+    background: var(--bg-card-color-hover-store);
+}
+
