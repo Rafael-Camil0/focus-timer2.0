@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" >
     <head>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,7 +17,7 @@
     <link rel="short icon" href="./assets/clock.svg">
 
 </head>
-<body>
+<body >
     <main id="app">
 
         <section id="timer">
@@ -28,19 +28,35 @@
             </div>
             <div id="controls">
                <button
-               data-action ="play"
-               class="ph-fill  ph-play"><span class="sr-only">Iniciar contador</span></button>
-               <button class="ph-fill  ph-pause"><span class="sr-only">Pausar contador</span></button>
-               <button class="ph-fill ph-stop"><span class="sr-only">Resetar contador</span></button>
-               <button class="ph-bold ph-plus"><span class="sr-only">Aumentar minutos</span></button>
-               <button class="ph-bold ph-minus"><span class="sr-only">Diminuir minutos></button> 
+               data-action ="play,''"
+               class="ph-fill  ph-play "id = 'play'><span class="sr-only">Iniciar contador</span></button>
+               <button
+               data-action ="pause,''"
+               class="ph-fill  ph-pause"><span class="sr-only">Pausar contador</span></button>
+               <button
+               data-action ="reset,''"
+               class="ph-fill ph-stop"><span class="sr-only">Resetar contador</span></button>
+               <button
+               data-action ="add,''"
+               class="ph-bold ph-plus"><span class="sr-only">Aumentar minutos</span></button>
+               <button
+               data-action ="decrease,''"
+               class="ph-bold ph-minus"><span class="sr-only">Diminuir minutos></button> 
             </div>
         </section>
         <section id="music">
-            <button type="button" class="ph ph-tree-evergreen tree"><span class="sr-only">Música floresta</span></button>
-            <button type="button"class="ph ph-cloud-rain rain" ><span class="sr-only">Música chuva</span></button>
-            <button type="button" class="ph ph-storefront store" ><span class="sr-only">Música cafeteria</span></button>
-            <button type="button"class="ph ph-flame fire" ><span class="sr-only">Música lareira</span></button>
+            <button
+            data-action="playMusic,tree"
+            type="button" class="ph ph-tree-evergreen tree "id="tree"><span class="sr-only">Música floresta</span></button>
+            <button
+            data-action="playMusic,rain"
+             type="button"class="ph ph-cloud-rain rain " id="rain"><span class="sr-only">Música chuva</span></button>
+            <button
+            data-action="playMusic,store"
+            type="button" class="ph ph-storefront store" id="store" ><span class="sr-only">Música cafeteria</span></button>
+            <button
+            data-action="playMusic,fire"
+            type="button"class="ph ph-flame fire " id="fire"><span class="sr-only">Música lareira</span></button>
         </section>
 
     

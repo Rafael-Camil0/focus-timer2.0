@@ -104,7 +104,9 @@ border: 2px solid var(--txt-color) ;
  gap: 20px;
  flex-wrap: wrap;
 }
-#music button{
+#music button,
+#music button:not(.active)
+{
 width: 118px;
 height: 132px;
 font-size: 6rem;
@@ -114,20 +116,21 @@ background-color: var(--bg-card-color);
 border: none;
 }
 
-#music .fire:hover{
+#music .fire:hover, #music .fire.active{
+
     color: var(--bg-card-color);
     background: var(--bg-gradiente-color-hover-fire);
 }
-#music .tree:hover{
+
+#music .tree:hover,#music .tree.active{
     color: var(--bg-card-color);
     background: var(--bg-card-color-hover-tree);
 }
-#music .rain:hover{
+#music .rain:hover,#music .rain.active{
     color: var(--bg-card-color);
     background: var(--bg-card-color-hover-rain);
 }
-#music .store:hover{
+#music .store:hover,#music .store.active{
     color: var(--bg-card-color);
     background: var(--bg-card-color-hover-store);
 }
-

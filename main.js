@@ -1,4 +1,4 @@
 import * as timer from './src/index.js'
 
 
-timer.start(5,0)
+timer.start(20,0)
